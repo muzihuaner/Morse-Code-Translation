@@ -1,0 +1,148 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292b73;
+}
+
+.panels {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.panel {
+  flex: 5;
+  padding: 30px;
+  background-color: white;
+  color: #292b73;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.panel.yellow {
+  flex: 4;
+  background-color: #ffb637;
+}
+
+h1,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  border: solid 2px rgba(0, 0, 0, 0.3);
+}
+textarea:focus {
+  border-color: #292b73;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 0px;
+  margin: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  border: none;
+}
+button.yellow {
+  background-color: #ffb637;
+  color: #292b73;
+}
+button.purple {
+  background-color: #292b73;
+  color: white;
+}
+button.white {
+  background-color: white;
+  border: solid 2px #292b73;
+}
+
+.symbol {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 0;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 3px #292b73;
+}
+
+.decoration {
+  font-size: 500px;
+  color: white;
+  position: absolute;
+  font-weight: 900;
+  opacity: 0.1;
+}
+
+.translist {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.translist li {
+  margin-bottom: 5px;
+  font-size: 18px;
+  width: 30%;
+}
+
+.playlist {
+  font-size: 20px;
+  text-align: center;
+  height: 20px;
+}
+.playlist .playing {
+  color: #ffb637;
+}
+@media (max-width: 768px) {
+  .panels {
+    display: inline;
+  }
+  .decoration {
+    position: fixed;
+  }
+  button{
+    width: -webkit-fill-available;
+  }
+}
